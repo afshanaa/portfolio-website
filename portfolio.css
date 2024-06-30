@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+html
+{
+line-height: 1.4;
+scroll-behavior: smooth;
+color: white;
+}
+section
+{
+  scroll-margin: 50px;
+}
+ /* section1 */
+        
+.container
+        { 
+          max-width: 1200px;   margin: 0 auto;
+        } 
+         ul
+         {
+            list-style: none;
+         }
+          
+         a
+          {
+            text-decoration: none;
+         display: flex;
+          color: #fcf9f9;
+          font-size: 2rem;
+          padding: 14px   16px;
+          text-align: center;
+        } 
+       
+
+
+
+          header
+           {
+            background-color: #181818;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+           
+           
+           
+ }
+          .navbar_background h1
+          {
+            font-size: 3rem; 
+            color: rgb(1, 154, 154);
+            font-weight: 600;
+            margin-left: 300px; 
+           }
+
+          nav
+        {
+            display: flex;  
+            justify-content: space-between; 
+            position: sticky; align-items: center;
+        }
+        nav ul
+        {
+            display: flex; 
+             gap: 20px;  
+             font-size: 1.9rem; 
+             font-weight: 800;
+        }
+        nav ul li
+        {
+            border-bottom: 2px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+        nav ul li:hover
+        {
+            border-bottom: 2px solid rgb(248, 250, 250);
+            transition: 0.3s ease-in-out;
+        }
+        .logo
+        {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        /* hero section */
+
+        #hero
+        {
+          background-image: url("https://static.vecteezy.com/system/resources/previews/030/431/908/non_2x/white-paper-flowers-background-wedding-decoration-bridal-bouquet-greeting-card-template-copy-space-ai-generative-photo.jpg");
+          background-size: cover;
+         background-attachment: fixed;
+          padding: 13rem 0;
+          border-bottom: 5px solid rgb(31, 1, 1);
+         
+        }
+         #hero h1 
+        {
+          font-size: 4rem;
+          font-weight: 600;
+          
+        
+        }
+        .hi-text
+        {
+          font-size: 7rem;
+          font-weight: bold;
+          color: rgb(5, 112, 112);
+         
+        }
+        .name-text
+        {
+         font-size: 5rem; 
+         font-weight: bold;
+        }
+        .hero-image img{
+         border-radius: 40%;
+      margin-top: 120px;
+      overflow: hidden;
+      border: 0px solid #0a0909;
+     background-color: rgba(95, 94, 94, 0.6);
+     box-shadow: 10px 15px 15px rgba(0,0,0, 0.9);
+
+     } 
+    
+     
+     #hero h2
+     {
+       font-size: 4rem;
+       font-weight: bold;
+       overflow: hidden;
+       border-right: 0.15em solid rgb(65, 1, 1);
+       white-space: nowrap;
+       margin: 0 auto;
+       animation: typing 6s steps(40, end), 
+       blink-caret 0.75s step-end infinite;
+     }
+
+@keyframes typing {
+          from{
+            width: 0;
+
+          }
+          to{
+            width: 100%;
+          }
+        } 
+        @keyframes   blink-caret{
+          from,
+          to{
+            border-color: transparent;
+          }
+          50%{
+            border-color: rgb(1, 73, 73);
+          }
+        }
+
+        #project {
+          background: rgb(214, 214, 214);
+        }
+
+        #project h1{
+          font-size: 6rem;
+          font-weight: bold;
+          color: rgb(8, 8, 8);
+          margin-top: 20px;
+          text-align: center;
+
+        }
+        #project h3{
+          font-size: 3rem;
+          font-weight: bold;
+          color: rgb(8, 8, 8);
+          margin-top: 5px; 
+        
+          
+        }
+
+
+        
+     #hero .container
+     {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+     }
+     .hero-content{
+       display: grid;
+       place-items: center;
+     }
+
+     .Project_container
+     {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+     }
+     .grod_item
+     {
+      display: grid;
+      place-items: center;
+     }
+     .card {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: 0.2s ease-in-out;
+     }
+     .card:hover
+     {
+      
+      transform:scale(1.05);
+      transition: 1s ease-in-out;
+     }
+    
+     .card:hover img
+     {
+      
+      transform:scale(1.05);
+      transition: 0.3s ease-in-out;
+      opacity: 0.8;
+     }
+
+     .card:hover .card-content
+     {
+      padding: 2px;
+      background: white;
+      color: #000;
+      transform: translateY(0px);
+     }
+
+
+     .card-content
+     {
+      padding: 2rem;
+      position: relative;
+       top: -6.4rem; 
+     margin-bottom: -6.4rem; 
+      transition: 0.5s ease-in-out;
+      transform: translateY(100px);
+     }
+     
+     .card-content h3
+     {
+      text-align: center;
+     }
+     
+    /* contact section */
+
+     #contact
+     {
+      background-color: rgb(222, 227, 227);
+     }
+     #contact h2
+     {
+       font-size: 8rem;
+       font-weight: 900;
+       text-align: center;
+       margin: 2rem 0;
+     }
+     #contact .container
+     {
+     height: 90vh;
+     display: flex;
+     flex-direction: column;
+     gap: 4rem;
+     justify-content: center;
+     }
+     .top-contact
+    {
+      max-width: 800px;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+
+    }
+    .contact-way
+    {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .contact-way i
+    {
+      font-size: 3rem;
+
+    }
+    .contact-way h3
+    {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .bottom-contact
+    {
+      max-width: 400px;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+      gap: 2rem;
+
+
+    }
+    /* footer */
+    footer
+    {
+      background: rgb(0, 31, 31);
+      padding: 0.95rem;
+      color: #fcf9f9;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+/* Midia Query */
+    @media(max-width:786px){
+      html{
+        font-size: 40%;
+      }
+      #hero .container{
+        flex-direction: column;
+         }
+         #hero-image {
+           display: grid;
+           place-items: center;
+            }
+            #contact .container{
+              height: 70vh;
+             } 
+    }
+
+    @media(max-width:500px){
+      html{
+        font-size: 32%;
+      }
+      #hero .container{
+     flex-direction: column;
+      }
+      #hero-image {
+        display: grid;
+        place-items: center;
+         }
+         #contact .container{
+          height: 50vh;
+         }
+
+    }
